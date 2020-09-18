@@ -1,0 +1,31 @@
+version:  '3.7'
+services:
+    mysql:
+        image: mysql:8.0
+        container_name: db
+        restart: on-failure
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: root
+    nginx:
+        image: nginx:1.19.0-alpine
+        container_name: nginx
+        restart: on-failure
+        volumes:
+            - './:/var/www/minecraft-api'
+            - './docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro'
+        ports:
+            - '80:80'
+        depends_on:
+            -   php
+    php:
+        container_name: php
+        build:
+            context: .
+            dockerfile: docker/php/Dockerfile
+        volumes:
+            - './:/var/www/minecraft-api'
+        restart: on-failure
+        env_file:
+            - .env
+        user: 1000:1000

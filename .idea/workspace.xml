@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f867f35c-7ed6-4de3-969f-395fbb93b9a1" name="Default Changelist" comment="">
+    <list default="true" id="f867f35c-7ed6-4de3-969f-395fbb93b9a1" name="Default Changelist" comment="Add Player and ServerStatus Route">
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +128,6 @@
       <path value="$PROJECT_DIR$/vendor/psr/link" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
       <path value="$PROJECT_DIR$/vendor/funnyitselmo/minecraftserverstatus" />
-      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1grNUx63PkWrFflWJEvVUUUsNOj" />
@@ -135,12 +138,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/php-fpm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projets\symfony\minecraft-api" />
+      <recent name="D:\Projets\symfony\minecraft-api\docker" />
+      <recent name="D:\Projets\symfony\minecraft-api\docker\engine" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projets\symfony\minecraft-api\docker\php-fpm" />
+      <recent name="D:\Projets\symfony\minecraft-api\docker" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -160,6 +174,11 @@
       <workItem from="1599825829564" duration="7531000" />
       <workItem from="1599855367277" duration="55000" />
       <workItem from="1599855442714" duration="506000" />
+      <workItem from="1600332918218" duration="24000" />
+      <workItem from="1600332966541" duration="7751000" />
+      <workItem from="1600354694921" duration="3337000" />
+      <workItem from="1600367303983" duration="2050000" />
+      <workItem from="1600415443419" duration="1280000" />
     </task>
     <task id="LOCAL-00001" summary="Add Player and ServerStatus Route">
       <created>1599855787765</created>
@@ -183,10 +202,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="770" y="399" key="#Composer/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1598868792596" />
+    <state x="727" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600337426559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="321" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1600337426559" />
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1598874366340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="235" key="#com.intellij.ide.util.MemberChooser/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1598874366340" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600367574176">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1600367574176" />
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1599828468818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -195,6 +222,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="583" y="88" key="CommitChangelistDialog2/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1599855786897" />
+    <state x="736" y="432" key="ComposerInitDialogKey" timestamp="1600357527299">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="736" y="432" key="ComposerInitDialogKey/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1600357527299" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599653510041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -205,14 +236,18 @@
     <state x="742" y="242" key="NewPhpClassDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1599818994445" />
     <state x="594" y="192" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1599828443153" />
     <state x="742" y="242" key="NewPhpClassDialog/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1598874323099" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1600333009125">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1600333009125" />
     <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1598874007628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="253" width="585" height="534" key="find.popup/1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1598874007628" />
-    <state x="615" y="240" width="672" height="677" key="run.anything.popup" timestamp="1599858165777">
+    <state x="615" y="240" width="672" height="677" key="run.anything.popup" timestamp="1600357448145">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="615" y="240" width="672" height="677" key="run.anything.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1599858165777" />
+    <state x="615" y="240" width="672" height="677" key="run.anything.popup/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1600357448145" />
     <state x="492" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599830031188" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599858179249">
       <screen x="0" y="0" width="1920" height="1040" />
