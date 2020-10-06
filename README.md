@@ -59,7 +59,7 @@ docker-compose down
 
 
 ## Routes
-###Chemin
+### Chemin
 L'API dispose actuellement de deux routes.
 
 | Route  | chemin |
@@ -67,7 +67,7 @@ L'API dispose actuellement de deux routes.
 | Player | /api/player/{name} |
 | Server | /api/server/{ip}/{port}|
 
-###Retour
+### Retour
 Quand on interroge les routes l'API va nous renvoyer les données au format *JSON*.
 
 > Player
