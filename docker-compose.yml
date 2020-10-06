@@ -1,12 +1,5 @@
 version:  '3.7'
 services:
-    mysql:
-        image: mysql:8.0
-        container_name: db
-        restart: on-failure
-        environment:
-            MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: root
     nginx:
         image: nginx:1.19.0-alpine
         container_name: nginx
